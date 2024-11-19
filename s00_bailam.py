@@ -31,10 +31,9 @@ tongtienmuahang(None)                   | None
 
 #region bailam
 def tongtienmuahang(gia_truoc_thue):
-  return 'TODO'
-
-if __name__=='__main__':
-  print( tongtienmuahang(1000000) )
-  print( tongtienmuahang(gia_truoc_thue=1000000) )
-  print( tongtienmuahang(None) )
+  if not gia_truoc_thue:
+    return None
+  thue = gia_truoc_thue * 0.1
+  tong_tien = gia_truoc_thue + thue
+  return int(tong_tien)
 #endregion bailam
